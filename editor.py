@@ -81,7 +81,7 @@ class TextEditor(QMainWindow):
         self.update_word_count()
 
         self.syntax_highlight_combo = QComboBox(self)
-        self.syntax_highlight_combo.addItems(['None', 'Python'])  # Add more languages as needed
+        self.syntax_highlight_combo.addItems(['None', 'Python'])  # next we add more lanuguage like c c++ 
         self.syntax_highlight_combo.currentIndexChanged.connect(self.update_syntax_highlight)
 
         find_label = QLabel('Find:', self)
